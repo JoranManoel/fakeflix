@@ -1,5 +1,9 @@
 body{
-    background-image: url(../img/fundo.jpg);
+    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/fundo.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 input{
@@ -44,7 +48,7 @@ button:hover{
     align-items: center;
 }
 .login{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
     height: 300px;
     width: 300px;
 
@@ -58,4 +62,29 @@ h1{
 
 img{
     width: 200px;
+}
+
+.help{
+    margin-top: 10px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.checkbox{
+    height: 10px;
+    width: 10px;
+    padding: 0px;
+    margin: 0px;
+
+    cursor: pointer;
+}
+.lembrar-se{
+    display: flex;
+
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color:white;
 }
