@@ -17,17 +17,33 @@
             <h1>Entrar</h1>
             <input type="text" name="usuario" id="usuario" placeholder="Email">
             <input type="password" name="senha" id="senha" placeholder="Senha">
-            <button>Entrar</button>
+            <button onclick="entrar()">Entrar</button>
             <div class="help">
                 <div class="lembrar-se">
                     <input type="checkbox" class="checkbox" name="lembrar" id="">
                     <a href="">Lembrar-se de mim</a>
                 </div>
-
                 <a href="">Precisa de ajuda?</a>
             </div>
         </div>
     </div>
-    
 </body>
+<script>
+    
+    const user = "joran"
+    const pass = "1234"
+
+    const usuarioDigitado = document.getElementById("usuario")
+    const senhaDigitada = document.getElementById("senha")
+
+    function entrar(){
+        if(usuarioDigitado.value == user && senhaDigitada.value == pass ){
+            window.location.replace('profile.html')
+            alert("Bem vindo!")
+        }else{
+            alert("Usuário ou senha incorreto")
+        }
+    }
+
+</script>
 </html>

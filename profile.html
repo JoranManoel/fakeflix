@@ -10,7 +10,7 @@
     <div class="container">
         <h1>Quem está assistindo?</h1>
         <div class="perfis">
-            <div class="card">
+            <div class="card" id="vovo">
                 <img src="img/pf1.png" class="perfilImg" alt="">
                 <h5>Vovó</h5>
             </div>
@@ -32,4 +32,9 @@
     </div>
     
 </body>
+<script>
+    document.getElementById('vovo').addEventListener('click', () =>{
+        window.location.replace('home.html')
+    })
+</script>
 </html>
