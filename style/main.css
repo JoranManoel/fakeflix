@@ -1,6 +1,8 @@
-body{
+*{
     margin: 0%;
-    
+    padding: 0%;
+}
+body{    
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
@@ -8,13 +10,12 @@ header{
     background: linear-gradient(to left,rgba(0,0,0,0.2),rgba(0,0,0,4)), url(../assets/capa.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 70%;
+    height: 80%;
     padding: 1%;
     padding-inline: 3%;
 }
 main{
-    background-color: brown;
-    height: 30%;
+    background-color: rgb(10, 10, 10);
 }
 nav{
     display: flex;
@@ -23,6 +24,7 @@ nav{
 }
 .descricao{
     width: 40%;
+    margin-top: 150px;
 }
 #logo{
     height: 40px;
@@ -38,6 +40,10 @@ li{
     list-style: none;
     margin: 10px;
     cursor: pointer;
+    color: rgb(190, 190, 190);
+}
+li:hover{
+    color: white;
 }
 .menu{
     display: flex;
@@ -46,4 +52,49 @@ li{
 .search{
     display: flex;
     align-items: center;
+}
+button{
+    height: 40px;
+    width: 170px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+
+    transition: 0.3s;
+
+    margin-right: 10px;
+    font-weight: bold;
+}
+button:hover{
+    transform: scale(1.05);
+    font-weight: bolder;
+}
+#btn_minha_lista{
+
+    background-color: rgb(100, 100, 100, 0.5);
+    color: white;
+
+    width: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.divButton{
+    display: flex;
+    align-items: center;
+}
+.card{
+    height: 400px;
+    width: 300px;
+    transition: 0.3s;
+
+    border-radius: 5px;
+}
+.card:hover{
+    transform: scale(1.08);
+}
+ul{
+    margin: 0%;
 }
