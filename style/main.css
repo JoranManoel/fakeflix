@@ -17,6 +17,9 @@ header{
 main{
     background-color: rgb(10, 10, 10);
 }
+section{
+    overflow: hidden;
+}
 nav{
     display: flex;
     align-items: center;
@@ -52,8 +55,11 @@ li:hover{
 .search{
     display: flex;
     align-items: center;
+
+    text-decoration: none;
+    color: white;
 }
-button{
+header button{
     height: 40px;
     width: 170px;
     cursor: pointer;
@@ -65,8 +71,9 @@ button{
     margin-right: 10px;
     font-weight: bold;
 }
-button:hover{
-    transform: scale(1.05);
+header button:hover{
+    background-color: red;
+    color: white;
     font-weight: bolder;
 }
 #btn_minha_lista{
@@ -81,20 +88,26 @@ button:hover{
     justify-content: center;
 
 }
+#btn_minha_lista:hover{
+    background-color: rgb(50, 50, 50, 0.9);
+}
 .divButton{
     display: flex;
     align-items: center;
+    margin-top: 5px;
 }
 .card{
-    height: 400px;
+    height: 350px;
     width: 300px;
     transition: 0.3s;
+
+    margin-inline: 5px;
+
+    cursor: pointer;
 
     border-radius: 5px;
 }
 .card:hover{
-    transform: scale(1.08);
-}
-ul{
-    margin: 0%;
+    transform: scale(1.05);
+    margin-right: 30px;
 }

@@ -5,55 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
     <title>Netflix</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="menu">
-                <img src="img/logo.png" id="logo" alt="">
-                <ul>
-                    <li>início</li>
-                    <li>séries</li>
-                    <li>filmes</li>
-                    <li>documentários</li>
-                </ul>
+    <section>
+        <header>
+            <nav>
+                <div class="menu">
+                    <img src="img/logo.png" id="logo" alt="">
+                    <ul>
+                        <li>início</li>
+                        <li>séries</li>
+                        <li>filmes</li>
+                        <li>documentários</li>
+                    </ul>
+                </div>
+                <a href="profile.html" class="search">
+                    <img src="img/search.png" style="width: 20px; height: 20px; margin-right: 20px;" alt="">
+                    <h4>Vovó</h4>
+                </a>
+            </nav>
+            <div class="descricao">
+                <h1>Bloodshot</h1>
+                <p>
+                    Bloodshot é um ex-soldado com poderes especiais: regeneração e capacidade de se metamorfosear.
+                    Assassinado ao lado da esposa, ele é ressuscitado e aprimorado com nanotecnologia, desenvolvendo tais
+                    habilidades.
+                </p>
+                <div class="divButton">
+                    <button id="play">▶ Reproduzir</button>
+                    <button id="btn_minha_lista">
+                        <p style="font-size: 20px; margin-right: 5px;">+</p> Minha lista
+                    </button>
+                </div>
             </div>
-            <div class="search">
-                <img src="img/search.png" style="width: 20px; height: 20px; margin-right: 20px;" alt="">
-                <h4>Vovó</h4>
+        </header>
+        <main>
+            <div class="owl-theme owl-carousel">
+                <a>   
+                    <img src="assets/ava.jpg" class="card" alt="">
+                </a>
+                <a>   
+                    <img src="assets/zc.jpg" class="card" alt="">
+                </a>
+                <a>   
+                    <img src="assets/ww.jpg" class="card" alt="">
+                </a>
+                <a>   
+                    <img src="assets/wv.jpg" class="card" alt="">
+                </a>
+                <a>   
+                    <img src="assets/tomjerry.jpg" class="card" alt="">
+                </a>
+                <a>   
+                    <img src="assets/soul.jpg" class="card" alt="">
+                </a>
+                <a>   
+                    <img src="assets/stw.jpg" class="card" alt="">
+                </a>
+                <a>   
+                    <img src="assets/mst.jpg" class="card" alt="">
+                </a>
+                <a>   
+                    <img src="assets/mk.jpg" class="card" alt="">
+                </a>
             </div>
-        </nav>
-
-        <div class="descricao">
-            <h1>Bloodshot</h1>
-            <p>
-                Bloodshot é um ex-soldado com poderes especiais: regeneração e capacidade de se metamorfosear.
-                Assassinado ao lado da esposa, ele é ressuscitado e aprimorado com nanotecnologia, desenvolvendo tais
-                habilidades.
-            </p>
-            <div class="divButton">
-                <button>▶ Reproduzir</button>
-                <button id="btn_minha_lista">
-                    <p style="font-size: 20px; margin-right: 5px;">+</p> Minha lista
-                </button>
-            </div>
-        </div>
-    </header>
-    <main>
-        <ul>
-            <li>   
-                <img src="assets/ava.jpg" class="card" alt="">
-            </li>
-            <li>   
-                <img src="assets/zc.jpg" class="card" alt="">
-            </li>
-            <li>   
-                <img src="assets/ww.jpg" class="card" alt="">
-            </li>
-        </ul>
-    </main>
+        </main>
+    </section>
 </body>
-
+<script src="js/owl/jquery.min.js"></script>
+<script src="js/owl/owl.carousel.min.js"></script>
+<script src="js/owl/main.js"></script>
+<script src="js/script.js"></script>
 </html>
